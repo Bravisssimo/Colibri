@@ -1,0 +1,18 @@
+{
+ "manifest_version": 2,
+ "name": "Colibri",
+ "description": "Contrôler son impact écologique, à chaque nouvel onglet",
+ "version": "0.6",
+ "background": {
+    "scripts": ["monscript.js"]
+    },
+ "browser_action": {
+      "default_icon": "128.png"
+    },
+ "icons": {
+      "128" : "128.png"
+     },
+ "chrome_url_overrides" : {
+    "newtab": "index0.html"
+  }
+}

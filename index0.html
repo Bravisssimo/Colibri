@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Nouvel onglet</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="monscript.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+  </style>
+</head>
+<body>
+    
+    <header>
+        <!-- ecriture du tip + catégorie + gmail etc, bandeau supérieur -->
+        <ul>
+            <li><a class="gmail" href="https://mail.google.com/mail/u/0/#inbox">Gmail</a></li>
+            <li><a class="img" href="https://www.google.fr/imghp?hl=fr&tab=ri&ogbl">Images</a></li>
+        </ul>
+        <div class="bandeau">
+            <!--la catégorie affichée-->
+            <h5 class="categorie"></h5>
+            <!--le bandeau du tips-->
+            <h4 class="tip"></h4>
+        </div>
+    </header>
+   
+    <section>
+        <div class="main"> 
+            <!-- Tout le reste de la page (hors partie supérieure onglets qu'on ne touche pas avec Tip&Tab) -->
+            <img class="google" src="google.png" />
+            <div class="searchbox">
+                <form id=search action="https://www.google.com/search" method="get">
+                <input type="search" class="recherche" autocomplete="on" spellcheck="true" name="q" placeholder="  Effectuez une recherche sur Google ou saisissez une URL"/>
+                </form>
+                <div class="icones">
+                    <div><img src="search.png"></div>
+                    <div><img src="mic.png"></div>
+                </div>
+            </div>
+        </div>
+        <p class="fact"></p>
+        <a class="hyperlien"></a>
+        <div class="cercle">
+        </div>
+    </section>
+</body>
+</html>

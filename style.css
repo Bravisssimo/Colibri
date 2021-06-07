@@ -1,0 +1,164 @@
+*
+/*concerne la totalité de la page*/
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'arial', sans-serif;
+}
+section
+/* concerne la mise en page du bloc de recherche */
+{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 82vh;
+    /*background-image: url(fondTest.jpg);*/
+    /*opacity: 0.90;*/
+    box-shadow: inset 0px 5px 10px 0px black;
+}
+header
+/*concerne la mise en page du "bandeau supérieur*/
+{
+    /*padding-top: 4vh;*/
+    height: 18vmin;
+}
+header ul
+/*concerne la mise en page de la liste d'éléments : Gmail et Images*/
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 1vh;
+}
+header ul li
+/*retire les puces de Gmail et Images*/
+{
+    list-style: none;
+}
+header ul li a
+/*modifie la forme de Gmail et images*/
+{
+    color: #111;
+    text-decoration: none;
+    font-size: 14px;
+}
+.gmail
+/*place + forme de Gmail*/
+{
+    padding-right: 35px;
+    font-family: 'Arial', sans-serif;
+}
+.img
+/*place + forme d'Images*/
+{
+    padding-right: 25px;
+    font-family: 'Arial', sans-serif;
+}
+section .main .searchbox
+/*concerne la mise en page de la catégorie recherche (barre, micro etc)*/
+{
+    position: relative;
+    width: 100%;
+    margin-top: 37px;
+}
+section .main .searchbox .recherche
+/*concerne uniquement la barre de recherche*/
+{
+    width: 100%;
+    height: 100%;
+    padding: 13px;
+    padding-left: 45px;
+    padding-right: 60px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    box-shadow: 1px 1px 8px #c6c6d3;
+}
+section .main
+/* mise en page bloc de recherche*/
+{
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 165px;
+    padding-left: 16px;
+}
+section .google
+{
+    width: 40vmin;
+}
+section .main .searchbox .icones
+/* mise en formes icones micro et loupe*/
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    padding: 12px 20px;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+}
+header .bandeau .tip
+/* concerne la mise en forme du tip à l'intérieur du bandeau supérieur*/
+{
+    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 7vmin;
+}
+header .bandeau .categorie
+/* concerne l'affichage de la catégorie dans le bandeau supérieur*/
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 4vmin;
+}
+.cercle
+/*concerne la forme du quart de cercle qui contient le fact*/
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 23vw;
+    height: 41vh;
+    border: 0px;
+    border-top: 41vh solid rgba(255, 255, 255, 0.700);
+    border-right: 23vw solid rgba(255, 255, 255, 0.700);
+    border-top-right-radius: 35%;
+    background: transparent;
+}
+.fact
+/*concerne la phrase du fact*/
+{
+    z-index: 1;
+    position: absolute;
+    font-family: 'Comfortaa', cursive;
+    font-size: 3.3vmin;
+    line-height: 6.3vh;
+    width: 21vw;
+    top: 44vh; 
+    left: 1vh;
+}
+.hyperlien
+/*concerne le "ici", l'hyperlien lié au fact*/
+{
+    font-size: 3.9vmin;
+    font-family: 'Comfortaa', cursive;
+    color: #009ccc;
+    z-index: 1;
+    position: absolute;
+    top: 75.8vh;
+    left: 17.5vw;
+}
