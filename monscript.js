@@ -1,4 +1,4 @@
-//création d'un tableau 3 dimensions contenant les tips, facts et backgrounds
+//création d'un tableau contenant les tips et facts
 const panel = new Array();
 
    panel[0] = new Array("Gaz ou électricité, optez pour un fournisseur d'énergie verte !","Chaque fournisseur utilise de l'énergie fossile, nucléaire ou renouvelable et a ses propres convictions. Vous avez le choix !");
@@ -38,7 +38,7 @@ const panel = new Array();
    panel[34] = new Array("Aux toilettes, j'utilise une chasse à deux boutons !","On adapte la quantité d'eau utilisée grâce à ce type de chasse. Sans gaspillage, écologique et économique !");
    panel[35] = new Array("Pour ma douche, j'utilise un pommeau adapté !","Un pommeau de qualité c'est un débit d'eau inférieur avec une pression supérieure, tout benef !");
 
-   //commande qui lance le tirage au sort à chaque chargement d'un nouvel onglet
+//commande qui lance le tirage au sort à chaque chargement d'un nouvel onglet
 window.addEventListener("load",modifyHtmlContent);
 
 //Initialisation du compteur et stockage en local
@@ -83,7 +83,7 @@ function modifyHtmlContent(){
       }
    }
 
-   //Si on a déjà tiré 90% des tips, on réinitialise les variables "déjà lu" pour recommencer le tirage avec tous les tips
+   //Si on a déjà tiré 90% des tips, on réinitialise la variable "déjà lu" pour recommencer le tirage avec tous les tips
    if (compteur>=limiteReinitialisation){
       localStorage.clear();
       localStorage.setItem("101","0");
